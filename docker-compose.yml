@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      context: .
+      args:
+        - dev=true
+      ports:
+        - "8000:8000"
+      volumnes:
+        - ./app:/app
+      
